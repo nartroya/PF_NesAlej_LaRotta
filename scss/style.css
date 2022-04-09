@@ -11,193 +11,6 @@ body {
   width: 100%;
 }
 
-/*Menu de Navegación*/
-nav {
-  padding: 10px 5px 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-decoration: none;
-  height: 100px;
-}
-
-nav .imagenLogo {
-  width: 100px;
-}
-
-nav .menuNavegacionOpcion {
-  margin: auto;
-  font-size: 1rem;
-}
-
-nav .menuNavegacionOpcion a.menuOpcionLink {
-  text-decoration: none;
-  color: black;
-}
-
-nav .menuNavegacionOpcion a.menuOpcionLink:hover {
-  color: #47D0AF;
-  font-size: 110%;
-}
-
-nav .menuNavegacionOpcion a.seleccionado {
-  color: #47D0AF;
-}
-
-nav .cajonimagenSocial {
-  width: 50px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-nav .cajonimagenSocial .imagenSocial {
-  width: 30px;
-}
-
-.linea {
-  height: 5px;
-  background-color: #47D0AF;
-}
-
-/*Footer*/
-footer {
-  background-color: #47D0AF;
-}
-
-footer .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-footer .footer .divFooter {
-  margin: auto;
-  padding: 20px 10px 10px 20px;
-}
-
-footer .footer .divFooter ul li {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-footer .footer .divFooter ul li a.opcionlinkFooter {
-  text-decoration: none;
-  color: white;
-}
-
-footer .footer .divFooter ul li a.opcionlinkFooter:hover {
-  color: black;
-}
-
-footer .footer .divFooter ul li a.seleccionadoFooter {
-  color: black;
-}
-
-.vaciaFooterUno {
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(20%, #47D0AF), to(white));
-  background-image: linear-gradient(to left, #47D0AF 20%, white);
-}
-
-.vaciaFooterDos {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #47D0AF), to(white));
-  background-image: linear-gradient(to right, #47D0AF 20%, white);
-}
-
-/******GRID's******/
-/*Grid's Areas Generales*/
-nav {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: menu;
-}
-
-header {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: slider;
-}
-
-main {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: cuerpo;
-}
-
-footer {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: pie;
-}
-
-.vaciaUno {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: vaciaUno;
-}
-
-.vaciaDos {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  grid-area: vaciaDos;
-}
-
-.vaciaTittleUno {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: vaciaTittleUno;
-}
-
-.vaciaTittleDos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: vaciaTittleDos;
-}
-
-.linea {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: linea;
-}
-
-.vaciaFooterUno {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: vaciaFooterUno;
-}
-
-.vaciaFooterDos {
-  -ms-grid-row: 5;
-  -ms-grid-column: 4;
-  grid-area: vaciaFooterDos;
-}
-
-#gridAreas {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "vaciaTittleUno menu menu vaciaTittleDos" "linea linea linea linea" "vaciaUno slider slider vaciaDos" "vaciaUno cuerpo cuerpo vaciaDos" "vaciaFooterUno pie pie vaciaFooterDos";
-  -ms-grid-columns: 10% 40% 40% 10%;
-      grid-template-columns: 10% 40% 40% 10%;
-  -ms-grid-rows: auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto;
-}
-
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12157,10 +11970,182 @@ fieldset:disabled .btn {
   }
 }
 
+/*Menu de Navegación*/
+nav {
+  padding: 10px 5px 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+}
+
+nav .imagenLogo {
+  width: 100px;
+}
+
+nav .menuNavegacionOpcion {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+nav .menuNavegacionOpcion a.menuOpcionLink {
+  text-decoration: none;
+  color: black;
+}
+
+nav .menuNavegacionOpcion a.menuOpcionLink:hover {
+  color: #47D0AF;
+}
+
+nav .menuNavegacionOpcion a.seleccionado {
+  color: #47D0AF;
+}
+
+nav .cajonimagenSocial {
+  width: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+nav .cajonimagenSocial .imagenSocial {
+  width: 30px;
+}
+
+.linea {
+  height: 5px;
+  background-color: #47D0AF;
+}
+
+/*Footer*/
+footer {
+  background-color: #47D0AF;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer .divFooter {
+  margin: auto;
+  padding: 20px 10px 10px 20px;
+}
+
+footer .footer .divFooter ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer .footer .divFooter ul li a.opcionlinkFooter {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer .divFooter ul li a.opcionlinkFooter:hover {
+  color: black;
+}
+
+footer .footer .divFooter ul li a.seleccionadoFooter {
+  color: black;
+}
+
+.vaciaFooterUno {
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(20%, #47D0AF), to(white));
+  background-image: linear-gradient(to left, #47D0AF 20%, white);
+}
+
+.vaciaFooterDos {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #47D0AF), to(white));
+  background-image: linear-gradient(to right, #47D0AF 20%, white);
+}
+
+/******GRID's******/
+/*Grid's Areas Generales*/
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: menu;
+}
+
+header {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: slider;
+}
+
+main {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cuerpo;
+}
+
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: pie;
+}
+
+.vaciaUno {
+  grid-area: vaciaUno;
+}
+
+.vaciaDos {
+  grid-area: vaciaDos;
+}
+
+.vaciaTittleUno {
+  grid-area: vaciaTittleUno;
+}
+
+.vaciaTittleDos {
+  grid-area: vaciaTittleDos;
+}
+
+.linea {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: linea;
+}
+
+.vaciaFooterUno {
+  grid-area: vaciaFooterUno;
+}
+
+.vaciaFooterDos {
+  grid-area: vaciaFooterDos;
+}
+
+#gridAreas {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "menu menu" "linea linea" "slider slider" "cuerpo cuerpo" "pie pie";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+}
+
 /*#################### ESTILOS GENERALES INDEX ####################*/
 /******************** Header ********************/
 /* Slider Principal */
-.sliderPrincipal, .sliderSecundario, .seccionUno, .seccionEquipoUnoNE, .seccionEquipoDosNE, .cajonSeccionUnoP, .sliderPrincipalDosC, .tituloOpcionC, .cajonFormularioC, .cajonDireccionC {
+.sliderPrincipal, .sliderSecundario, .seccionUno, .cajonSeccionUnoP, .sliderPrincipalDosC, .tituloOpcionC, .cajonFormularioC, .cajonDireccionC {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12171,20 +12156,21 @@ fieldset:disabled .btn {
   width: 100%;
 }
 
-.sliderPrincipal .cajonSliderPrincipal, .sliderSecundario .cajonSliderPrincipal, .seccionUno .cajonSliderPrincipal, .seccionEquipoUnoNE .cajonSliderPrincipal, .seccionEquipoDosNE .cajonSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal {
+.sliderPrincipal .cajonSliderPrincipal, .sliderSecundario .cajonSliderPrincipal, .seccionUno .cajonSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal {
   width: 50%;
   margin: auto;
 }
 
-.sliderPrincipal .cajonSliderPrincipal .tituloIndexSliderPrincipal, .sliderSecundario .cajonSliderPrincipal .tituloIndexSliderPrincipal, .seccionUno .cajonSliderPrincipal .tituloIndexSliderPrincipal, .seccionEquipoUnoNE .cajonSliderPrincipal .tituloIndexSliderPrincipal, .seccionEquipoDosNE .cajonSliderPrincipal .tituloIndexSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal .tituloIndexSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal .tituloIndexSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal .tituloIndexSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal .tituloIndexSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal .tituloIndexSliderPrincipal {
+.sliderPrincipal .cajonSliderPrincipal .tituloIndexSliderPrincipal, .sliderSecundario .cajonSliderPrincipal .tituloIndexSliderPrincipal, .seccionUno .cajonSliderPrincipal .tituloIndexSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal .tituloIndexSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal .tituloIndexSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal .tituloIndexSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal .tituloIndexSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal .tituloIndexSliderPrincipal {
   -webkit-animation-name: tituloIndexSliderPrincipal;
           animation-name: tituloIndexSliderPrincipal;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-delay: 0.5;
           animation-delay: 0.5;
+  margin-left: 20px;
 }
 
 @-webkit-keyframes tituloIndexSliderPrincipal {
@@ -12217,15 +12203,16 @@ fieldset:disabled .btn {
   }
 }
 
-.sliderPrincipal .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .sliderSecundario .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .seccionUno .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .seccionEquipoUnoNE .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .seccionEquipoDosNE .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal .subTituloIndexSliderPrincipal {
+.sliderPrincipal .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .sliderSecundario .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .seccionUno .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal .subTituloIndexSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal .subTituloIndexSliderPrincipal {
   -webkit-animation-name: subTituloIndexSliderPrincipal;
           animation-name: subTituloIndexSliderPrincipal;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-delay: 0.5;
           animation-delay: 0.5;
+  margin-left: 20px;
 }
 
 @-webkit-keyframes subTituloIndexSliderPrincipal {
@@ -12258,11 +12245,11 @@ fieldset:disabled .btn {
   }
 }
 
-.sliderPrincipal .cajonSliderPrincipal .imagenSliderPrincipal, .sliderSecundario .cajonSliderPrincipal .imagenSliderPrincipal, .seccionUno .cajonSliderPrincipal .imagenSliderPrincipal, .seccionEquipoUnoNE .cajonSliderPrincipal .imagenSliderPrincipal, .seccionEquipoDosNE .cajonSliderPrincipal .imagenSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal .imagenSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal .imagenSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal .imagenSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal .imagenSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal .imagenSliderPrincipal {
+.sliderPrincipal .cajonSliderPrincipal .imagenSliderPrincipal, .sliderSecundario .cajonSliderPrincipal .imagenSliderPrincipal, .seccionUno .cajonSliderPrincipal .imagenSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal .imagenSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal .imagenSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal .imagenSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal .imagenSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal .imagenSliderPrincipal {
   width: 100%;
 }
 
-.sliderPrincipal .cajonSliderPrincipal h1, .sliderSecundario .cajonSliderPrincipal h1, .seccionUno .cajonSliderPrincipal h1, .seccionEquipoUnoNE .cajonSliderPrincipal h1, .seccionEquipoDosNE .cajonSliderPrincipal h1, .cajonSeccionUnoP .cajonSliderPrincipal h1, .sliderPrincipalDosC .cajonSliderPrincipal h1, .tituloOpcionC .cajonSliderPrincipal h1, .cajonFormularioC .cajonSliderPrincipal h1, .cajonDireccionC .cajonSliderPrincipal h1, .sliderPrincipal .cajonSliderPrincipal .h1, .sliderSecundario .cajonSliderPrincipal .h1, .seccionUno .cajonSliderPrincipal .h1, .seccionEquipoUnoNE .cajonSliderPrincipal .h1, .seccionEquipoDosNE .cajonSliderPrincipal .h1, .cajonSeccionUnoP .cajonSliderPrincipal .h1, .sliderPrincipalDosC .cajonSliderPrincipal .h1, .tituloOpcionC .cajonSliderPrincipal .h1, .cajonFormularioC .cajonSliderPrincipal .h1, .cajonDireccionC .cajonSliderPrincipal .h1 {
+.sliderPrincipal .cajonSliderPrincipal h1, .sliderSecundario .cajonSliderPrincipal h1, .seccionUno .cajonSliderPrincipal h1, .cajonSeccionUnoP .cajonSliderPrincipal h1, .sliderPrincipalDosC .cajonSliderPrincipal h1, .tituloOpcionC .cajonSliderPrincipal h1, .cajonFormularioC .cajonSliderPrincipal h1, .cajonDireccionC .cajonSliderPrincipal h1, .sliderPrincipal .cajonSliderPrincipal .h1, .sliderSecundario .cajonSliderPrincipal .h1, .seccionUno .cajonSliderPrincipal .h1, .cajonSeccionUnoP .cajonSliderPrincipal .h1, .sliderPrincipalDosC .cajonSliderPrincipal .h1, .tituloOpcionC .cajonSliderPrincipal .h1, .cajonFormularioC .cajonSliderPrincipal .h1, .cajonDireccionC .cajonSliderPrincipal .h1 {
   margin-bottom: 50px;
 }
 
@@ -12285,8 +12272,8 @@ fieldset:disabled .btn {
 }
 
 .sliderSecundario .cajonSliderSecundario .imagenSliderSecundario:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .sliderSecundario #cajonSliderSecundarioUno {
@@ -12348,8 +12335,6 @@ fieldset:disabled .btn {
 
 .seccionUno .cajonSeccionUno .imagenResalte:hover {
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 5px 5px #47D0AF;
-          box-shadow: 0px 0px 5px 5px #47D0AF;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
   -webkit-filter: opacity(0.5);
@@ -12383,6 +12368,7 @@ fieldset:disabled .btn {
 
 .seccionDos .cajonSeccionDos h2, seccionMarcasNE .cajonSeccionDos h2, .seccionUnoP .cajonSeccionDos h2, .seccionDosP .cajonSeccionDos h2, .productosOnpremisesP .cajonSeccionDos h2, .formularioC .cajonSeccionDos h2, #opcionFormularioDosC .cajonSeccionDos h2, .seccionDos .cajonSeccionDos .h2, seccionMarcasNE .cajonSeccionDos .h2, .seccionUnoP .cajonSeccionDos .h2, .seccionDosP .cajonSeccionDos .h2, .productosOnpremisesP .cajonSeccionDos .h2, .formularioC .cajonSeccionDos .h2, #opcionFormularioDosC .cajonSeccionDos .h2, .seccionDos .cajonSeccionDos p, seccionMarcasNE .cajonSeccionDos p, .seccionUnoP .cajonSeccionDos p, .seccionDosP .cajonSeccionDos p, .productosOnpremisesP .cajonSeccionDos p, .formularioC .cajonSeccionDos p, #opcionFormularioDosC .cajonSeccionDos p {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .seccionDos .cajonSeccionDos p, seccionMarcasNE .cajonSeccionDos p, .seccionUnoP .cajonSeccionDos p, .seccionDosP .cajonSeccionDos p, .productosOnpremisesP .cajonSeccionDos p, .formularioC .cajonSeccionDos p, #opcionFormularioDosC .cajonSeccionDos p {
@@ -12408,12 +12394,10 @@ fieldset:disabled .btn {
 .sliderPrincipalNE .tituloPrincipalNE {
   -webkit-animation-name: tituloPrincipalNE;
           animation-name: tituloPrincipalNE;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-delay: 0.5;
-          animation-delay: 0.5;
 }
 
 @-webkit-keyframes tituloPrincipalNE {
@@ -12450,7 +12434,15 @@ fieldset:disabled .btn {
 /******************** EQUIPO  ********************/
 /* Seccion Uno */
 .seccionEquipoUnoNE {
-  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -12468,6 +12460,15 @@ fieldset:disabled .btn {
 
 /* Seccion Dos */
 .seccionEquipoDosNE {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: 50px auto;
   margin-top: 50px;
 }
 
@@ -12493,16 +12494,24 @@ fieldset:disabled .btn {
   width: 32%;
 }
 
-.cajonEquipoNE:hover {
-  width: 34%;
+.cajonEquipoNE:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .cajonEquipoNE .imagenEquipoNE {
-  width: 100%;
+  width: 70%;
+  margin: inherit;
 }
 
 .cajonEquipoNE .textoEquipoNE {
   padding: 20px;
+}
+
+.cajonEquipoNE .tituloTextoEquipoNE {
+  padding: 20px;
+  font-weight: bold;
+  margin: inherit;
 }
 
 /****************************************/
@@ -12527,9 +12536,13 @@ seccionMarcasNE {
   text-align: center;
 }
 
+.textoMarcasNE {
+  margin-left: 20px;
+}
+
 .imagenMarcasNE {
-  width: 20%;
-  margin: 20px;
+  width: 10%;
+  margin: 10px;
 }
 
 #marcaUno, #marcaDos, #marcaTres, #marcaCuatro, #marcaCinco, #marcaSeis, #marcaSiete, #marcaOcho {
@@ -12588,15 +12601,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12604,15 +12621,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12628,15 +12649,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12644,15 +12669,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12669,15 +12698,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12685,15 +12718,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12710,15 +12747,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12726,15 +12767,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12751,31 +12796,39 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12792,31 +12845,39 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12833,31 +12894,39 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  50% {
+  40% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  62.5% {
+  50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12874,31 +12943,39 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  50% {
+  40% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  62.5% {
+  50% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12915,31 +12992,39 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  62.5% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  75% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12956,31 +13041,39 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  62.5% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  75% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -12997,15 +13090,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13013,15 +13110,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  75% {
+  60% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  87.5% {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13038,15 +13139,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13054,15 +13159,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  75% {
+  60% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  87.5% {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13079,15 +13188,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13095,17 +13208,21 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  87.5% {
+  70% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(1);
@@ -13120,15 +13237,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13136,17 +13257,21 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  87.5% {
+  70% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(1);
@@ -13161,15 +13286,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13177,21 +13306,25 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   /* fin */
 }
@@ -13202,15 +13335,19 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  12.5% {
+  10% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  25% {
+  20% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  37.5% {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -13218,21 +13355,25 @@ seccionMarcasNE {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  62.5% {
+  60% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  70% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  87.5% {
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   /* fin */
 }
@@ -13764,7 +13905,7 @@ seccionMarcasNE {
 }
 
 @media (max-width: 480px) {
-  .sliderPrincipal, .sliderSecundario, .seccionUno, .seccionEquipoUnoNE, .seccionEquipoDosNE, .cajonSeccionUnoP, .sliderPrincipalDosC, .tituloOpcionC, .cajonFormularioC, .cajonDireccionC {
+  .sliderPrincipal, .sliderSecundario, .seccionUno, .cajonSeccionUnoP, .sliderPrincipalDosC, .tituloOpcionC, .cajonFormularioC, .cajonDireccionC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -13774,7 +13915,7 @@ seccionMarcasNE {
             flex-direction: column;
     width: 100%;
   }
-  .sliderPrincipal .cajonSliderPrincipal, .sliderSecundario .cajonSliderPrincipal, .seccionUno .cajonSliderPrincipal, .seccionEquipoUnoNE .cajonSliderPrincipal, .seccionEquipoDosNE .cajonSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal {
+  .sliderPrincipal .cajonSliderPrincipal, .sliderSecundario .cajonSliderPrincipal, .seccionUno .cajonSliderPrincipal, .cajonSeccionUnoP .cajonSliderPrincipal, .sliderPrincipalDosC .cajonSliderPrincipal, .tituloOpcionC .cajonSliderPrincipal, .cajonFormularioC .cajonSliderPrincipal, .cajonDireccionC .cajonSliderPrincipal {
     width: 100%;
   }
   .sliderSecundario {
@@ -13795,7 +13936,6 @@ seccionMarcasNE {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -13861,6 +14001,17 @@ seccionMarcasNE {
     margin-bottom: 20px;
     width: 100%;
   }
+  .seccionUno .cajonSeccionUno .imagenResalte:hover {
+    border-radius: 0%;
+    -webkit-transform: none;
+            transform: none;
+    width: 200px;
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  .seccionDos .cajonSeccionDos h2, seccionMarcasNE .cajonSeccionDos h2, .seccionUnoP .cajonSeccionDos h2, .seccionDosP .cajonSeccionDos h2, .productosOnpremisesP .cajonSeccionDos h2, .formularioC .cajonSeccionDos h2, #opcionFormularioDosC .cajonSeccionDos h2, .seccionDos .cajonSeccionDos .h2, seccionMarcasNE .cajonSeccionDos .h2, .seccionUnoP .cajonSeccionDos .h2, .seccionDosP .cajonSeccionDos .h2, .productosOnpremisesP .cajonSeccionDos .h2, .formularioC .cajonSeccionDos .h2, #opcionFormularioDosC .cajonSeccionDos .h2, .seccionDos .cajonSeccionDos p, seccionMarcasNE .cajonSeccionDos p, .seccionUnoP .cajonSeccionDos p, .seccionDosP .cajonSeccionDos p, .productosOnpremisesP .cajonSeccionDos p, .formularioC .cajonSeccionDos p, #opcionFormularioDosC .cajonSeccionDos p {
+    margin-left: 20px;
+  }
   .imagenDiagrama {
     width: 100%;
     margin: auto;
@@ -13878,7 +14029,8 @@ seccionMarcasNE {
     width: 30%;
   }
   .seccionEquipoUnoNE .cajonEquipoNE:hover, .seccionEquipoDosNE .cajonEquipoNE:hover {
-    width: 40%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .textoMarcasNE {
     margin: 10px;
@@ -13898,7 +14050,11 @@ seccionMarcasNE {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
   }
   .seccionEquipoDosNE {
     display: -webkit-box;
@@ -13908,12 +14064,17 @@ seccionMarcasNE {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 0px;
+    width: 100%;
+    margin: auto;
   }
   .cajonEquipoNE {
     border: solid 1px;
     margin-bottom: 10px;
     width: 90%;
+  }
+  .cajonEquipoNE:hover img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .seccionMarcasDosNE {
     -webkit-box-orient: vertical;
@@ -13922,11 +14083,8 @@ seccionMarcasNE {
             flex-direction: column;
   }
   .imagenMarcasNE {
-    width: 70%;
+    width: 60%;
     margin: 0px;
-  }
-  .cajonEquipoNE:hover {
-    width: 90%;
   }
 }
 

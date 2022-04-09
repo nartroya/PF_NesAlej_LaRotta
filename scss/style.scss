@@ -1,8 +1,9 @@
 /*#################### IMPORTACIONES DE ESTILOS ####################*/
 @import "reset";
+@import "scss/bootstrap.scss";
 @import "global";
 @import "grids";
-@import "scss/bootstrap.scss";
+
 //#################### VARIABLES ####################
 $colorPrincipal: #47D0AF;
 $colorSombraUno: #47D0AF;
@@ -30,9 +31,10 @@ $colorSombraUno: #47D0AF;
         margin: auto;
         .tituloIndexSliderPrincipal {
             animation-name: tituloIndexSliderPrincipal;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-iteration-count: 1;
             animation-delay: 0.5;
+            margin-left: 20px;
         }
         @keyframes tituloIndexSliderPrincipal {
             /* inicio */ 
@@ -49,9 +51,10 @@ $colorSombraUno: #47D0AF;
         }
         .subTituloIndexSliderPrincipal {
             animation-name: subTituloIndexSliderPrincipal;
-            animation-duration: 3s;
+            animation-duration: 1.2s;
             animation-iteration-count: 1;
             animation-delay: 0.5;
+            margin-left: 20px;
         }
         @keyframes subTituloIndexSliderPrincipal {
             /* inicio */
@@ -85,7 +88,7 @@ $colorSombraUno: #47D0AF;
             width: 100px; 
             transition: all 1.2s;
             &:hover {
-                transform:scale(1.1);
+                transform:scale(0.8);
             }
         }
     }
@@ -132,7 +135,7 @@ $colorSombraUno: #47D0AF;
             transition: all 1.3s;
             &:hover {
                 border-radius:50%;
-                box-shadow: 0px 0px 5px 5px $colorSombraUno;
+                //box-shadow: 0px 0px 5px 5px $colorSombraUno;
                 transform: rotate(10deg);
                 filter: opacity(.5);
                 width: 220px;
@@ -154,6 +157,7 @@ $colorSombraUno: #47D0AF;
         @include margin (0, 20px, auto, auto);
         & h2, & p {
             margin-bottom: 20px;
+            margin-left: 20px;
         }
         p {
             text-align: left;
@@ -175,9 +179,8 @@ $colorSombraUno: #47D0AF;
     background-color: #47D0AF;
     .tituloPrincipalNE {
         animation-name: tituloPrincipalNE;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
         animation-iteration-count: 1;
-        animation-delay: 0.5;
     }
 }
 @keyframes tituloPrincipalNE {
@@ -197,16 +200,21 @@ $colorSombraUno: #47D0AF;
 /******************** EQUIPO  ********************/
 /* Seccion Uno */
 .seccionEquipoUnoNE {
-    @extend .sliderPrincipal;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 50px auto;
     text-align: center;
     #cajonColorUno {border-color: #8FD14F;}
     #cajonColorDos {border-color: #47D0AF;}
     #cajonColorTres {border-color: #12CDD4;}
 }
 /* Seccion Dos */
-.seccionEquipoDosNE {
-    @extend .sliderPrincipal;
+.seccionEquipoDosNE { 
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 50px auto;
     margin-top: 50px;
     #cajonColorCuatro {border-color: #47D0AF;}
     #cajonColorCinco {border-color: #2D9BF0;}
@@ -218,11 +226,12 @@ $colorSombraUno: #47D0AF;
     margin: 0px auto;
     text-align: left;
     width: 32%;
-    &:hover {
-        width: 34%;
+    &:hover img {
+        transform: scale(1.05);
     }
-    .imagenEquipoNE {width: 100%;}
+    .imagenEquipoNE {width: 70%; margin: inherit;}
     .textoEquipoNE {padding: 20px;}
+    .tituloTextoEquipoNE {padding: 20px; font-weight: bold; margin: inherit;}
 }
 /****************************************/
 /******************** MARCAS  ********************/
@@ -243,9 +252,12 @@ seccionMarcasNE {
 .seccionMarcasDosNE {
     text-align: center;
 }
+.textoMarcasNE {
+    margin-left: 20px;
+}
 .imagenMarcasNE {
-    width: 20%; 
-    margin: 20px;
+    width: 10%; 
+    margin: 10px;
 }
 #marcaUno {
     animation-name: marcaUno;
@@ -275,97 +287,113 @@ $marca:(
 @keyframes marcaUno {
     /* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1.1);}
-    25% {transform: scale(1);}
-    37.5% {transform: scale(1);}
+    10% {transform: scale(1.1);}
+    20% {transform: scale(1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1);}
     50% {transform: scale(1);}
-    62.5% {transform: scale(1);}
-    75% {transform: scale(1);}
-    87.5% {transform: scale(1);}
+    60% {transform: scale(1);}
+    70% {transform: scale(1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(1);}
     100% {transform: scale(1);}
     /* fin */}
 @keyframes marcaDos {
     /* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1);}
-    25% {transform: scale(1.1);}
-    37.5% {transform: scale(1);}
+    10% {transform: scale(1);}
+    20% {transform: scale(1.1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1);}
     50% {transform: scale(1);}
-    62.5% {transform: scale(1);}
-    75% {transform: scale(1);}
-    87.5% {transform: scale(1);}
+    60% {transform: scale(1);}
+    70% {transform: scale(1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(1);}
     100% {transform: scale(1);}
     /* fin */}
 @keyframes marcaTres {
     /* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1);}
-    25% {transform: scale(1);}
-    37.5% {transform: scale(1.1);}
+    10% {transform: scale(1);}
+    20% {transform: scale(1);}
+    30% {transform: scale(1.1);}
+    40% {transform: scale(1);}
     50% {transform: scale(1);}
-    62.5% {transform: scale(1);}
-    75% {transform: scale(1);}
-    87.5% {transform: scale(1);}
+    60% {transform: scale(1);}
+    70% {transform: scale(1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(1);}
     100% {transform: scale(1);}
     /* fin */}
 @keyframes marcaCuatro {
     /* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1);}
-    25% {transform: scale(1);}
-    37.5% {transform: scale(1);}
-    50% {transform: scale(1.1);}
-    62.5% {transform: scale(1);}
-    75% {transform: scale(1);}
-    87.5% {transform: scale(1);}
+    10% {transform: scale(1);}
+    20% {transform: scale(1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1.1);}
+    50% {transform: scale(1);}
+    60% {transform: scale(1);}
+    70% {transform: scale(1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(1);}
     100% {transform: scale(1);}
     /* fin */}
 @keyframes marcaCinco {
     /* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1);}
-    25% {transform: scale(1);}
-    37.5% {transform: scale(1);}
-    50% {transform: scale(1);}
-    62.5% {transform: scale(1.1);}
-    75% {transform: scale(1);}
-    87.5% {transform: scale(1);}
+    10% {transform: scale(1);}
+    20% {transform: scale(1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    60% {transform: scale(1);}
+    70% {transform: scale(1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(1);}
     100% {transform: scale(1);}
     /* fin */}
 @keyframes marcaSeis {
     /* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1);}
-    25% {transform: scale(1);}
-    37.5% {transform: scale(1);}
+    10% {transform: scale(1);}
+    20% {transform: scale(1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1);}
     50% {transform: scale(1);}
-    62.5% {transform: scale(1);}
-    75% {transform: scale(1.1);}
-    87.5% {transform: scale(1);}
+    60% {transform: scale(1.1);}
+    70% {transform: scale(1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(1);}
     100% {transform: scale(1);}
     /* fin */}
 @keyframes marcaSiete {/* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1);}
-    25% {transform: scale(1);}
-    37.5% {transform: scale(1);}
+    10% {transform: scale(1);}
+    20% {transform: scale(1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1);}
     50% {transform: scale(1);}
-    62.5% {transform: scale(1);}
-    75% {transform: scale(1);}
-    87.5% {transform: scale(1.1);}
+    60% {transform: scale(1);}
+    70% {transform: scale(1.1);}
+    80% {transform: scale(1);}
+    90% {transform: scale(1);}
     100% {transform: scale(1);}
     /* fin */}
 @keyframes marcaOcho {
     /* inicio */
     0%{transform: scale(1);}
-    12.5% {transform: scale(1);}
-    25% {transform: scale(1);}
-    37.5% {transform: scale(1);}
+    10% {transform: scale(1);}
+    20% {transform: scale(1);}
+    30% {transform: scale(1);}
+    40% {transform: scale(1);}
     50% {transform: scale(1);}
-    62.5% {transform: scale(1);}
-    75% {transform: scale(1);}
-    87.5% {transform: scale(1);}
-    100% {transform: scale(1.1);}
+    60% {transform: scale(1);}
+    70% {transform: scale(1);}
+    80% {transform: scale(1.1);}
+    90% {transform: scale(1);}
+    100% {transform: scale(1);}
     /* fin */}
 
 

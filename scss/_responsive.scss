@@ -182,7 +182,6 @@
         .cajonSliderSecundario {
             display: flex;
             flex-direction: row;
-            width: 100%;
             margin-top: 5px;
             margin-bottom: 5px;
             margin-left: 5px;
@@ -237,6 +236,21 @@
             margin-top: 20px;
             margin-bottom: 20px;
             width: 100%;
+            .imagenResalte {
+                &:hover {
+                    border-radius:0%;
+                    transform: none;
+                    width: 200px;
+                    filter: opacity(1);
+                }
+            }
+        }
+    }
+    .seccionDos {
+        .cajonSeccionDos {
+            & h2, p {
+                margin-left: 20px;
+            }
         }
     }
     .imagenDiagrama {width: 100%; margin: auto;}
@@ -250,7 +264,7 @@
             border: solid 1px;
             width: 30%;
             &:hover {
-                width: 40%;
+                transform: scale(1.05);
             }
         } 
     }
@@ -261,25 +275,30 @@
     .seccionEquipoUnoNE {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
     }
     .seccionEquipoDosNE {
         display: flex;
         flex-direction: column;
-        margin-top: 0px;
+        width: 100%;
+        margin: auto;
     }
     .cajonEquipoNE {
         border: solid 1px;
         margin-bottom: 10px;
         width: 90%;
+        &:hover img {
+            transform: scale(1);
+        }
     }
     .seccionMarcasDosNE {
         flex-direction: column;
     }
-    .imagenMarcasNE {width: 70%; margin: 0px;}
-    .cajonEquipoNE:hover {
-        width: 90%;
-    }
+    .imagenMarcasNE {width: 60%; margin: 0px;}
 }
 /****************************************/
 /******************** Media Queries PRODUCTOS ********************/

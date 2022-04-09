@@ -15,12 +15,12 @@ footer {grid-area: pie;}
 #gridAreas {
     display: grid;
     grid-template-areas: 
-    "vaciaTittleUno menu menu vaciaTittleDos"
-    "linea linea linea linea"
-    "vaciaUno slider slider vaciaDos"
-    "vaciaUno cuerpo cuerpo vaciaDos"
-    "vaciaFooterUno pie pie vaciaFooterDos"
+    "menu menu"
+    "linea linea"
+    "slider slider"
+    "cuerpo cuerpo"
+    "pie pie"
     ;
-    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto;
 }
