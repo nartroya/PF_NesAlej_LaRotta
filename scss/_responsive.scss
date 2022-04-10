@@ -272,7 +272,7 @@
         } 
     }
     .textoMarcasNE {margin: 10px;}
-    .imagenMarcasNE {width: 20%; margin: 10px;}
+    .imagenMarcasNE {width: 8%; margin: 10px;}
 }
 @media (max-width: 480px) {
     .seccionEquipoUnoNE {
@@ -299,9 +299,15 @@
         }
     }
     .seccionMarcasDosNE {
+        display: flex;
         flex-direction: column;
     }
-    .imagenMarcasNE {width: 60%; margin: 0px;}
+    .seccionMarcasNE {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .imagenMarcasNE {width: 20%; margin: auto;}
 }
 /****************************************/
 /******************** Media Queries PRODUCTOS ********************/
