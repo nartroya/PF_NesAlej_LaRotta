@@ -10,16 +10,16 @@
 @import "functions";
 @import "variables"; 
 @import "mixins";
-@import "utilities";
+//@import "utilities";
 
 // Layout & components
-@import "root";
+//@import "root";
 //@import "reboot";
 //@import "type";
 //@import "images";
 //@import "containers";
 //@import "grid";
-//@import "tables";
+//@import "tables"; 
 //@import "forms";
 //@import "buttons";
 //@import "transitions";
@@ -31,12 +31,12 @@
 //@import "accordion"; 
 //@import "breadcrumb";
 //@import "pagination";
-//@import "badge"; 
+//@import "badge";
 //@import "alert";
 //@import "progress";
 //@import "list-group"; 
 //@import "close";
-//@import "toasts";
+//@import "toasts";  
 //@import "modal";
 //@import "tooltip";
 //@import "popover";
@@ -45,7 +45,7 @@
 //@import "offcanvas";
 //@import "placeholders";
 
-// Helpers 
+// Helpers  
 //@import "helpers";
 
 // Utilities

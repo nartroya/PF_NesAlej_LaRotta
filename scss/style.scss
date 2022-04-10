@@ -400,7 +400,9 @@ $marca:(
 /****************************************/
 /*######################################################################*/
 /*#################### ESTILOS GENERALES "SERVICIO" ####################*/
-
+.tituloS {
+    @include margin(50px, 0px, 10%, 10%);
+}
 /*######################################################################*/
 /*#################### ESTILOS GENERALES "PRODUCTO" ####################*/
 /******************** Header  ********************/
@@ -420,7 +422,6 @@ $marca:(
 main {
     width: 100%;
 }
-
 /* Seccion Uno */
 .seccionUnoP {
     .textoSeccionUnoP {
@@ -453,7 +454,6 @@ main {
     }
 
 }
-
 /* Seccion Dos */
 #colorOnpremisesUno {background-color: #12CDD4;}
 #colorOnpremisesDos {background-color: #8FD14F;}
@@ -497,7 +497,7 @@ main {
         text-align: right;
         @include margin(40px, 40px, 0px, 0px);
         & span {
-            height: 60px;
+            height: 60px; 
             padding: 20px 100px;
             background-color: #47D0AF;
             border-radius: 8px;
@@ -510,20 +510,21 @@ main {
             color: black;
         }
     }
-}
+} 
+ 
 /****************************************/
 /*######################################################################*/
 /*#################### ESTILOS GENERALES "CONTACTANOS" ####################*/
 /******************** Header  ********************/
 /* Cabecera */
 .sliderPrincipalUnoC {
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    @include margin(60px, 30px, 10%, 10%);
     text-align: center;
 }
 .sliderPrincipalDosC { 
-    @extend .sliderPrincipal;
+    display: flex;
+    flex-direction: row;
+    @include margin(30px, 30px, 10%, 10%);
     .opcionContactoC {
         width: 32%;
         margin: 0 auto;
@@ -563,98 +564,98 @@ main {
 /******************** MAIN  ********************/
 /* Formulario */
 .formularioC {
-    @extend .seccionDos;
-}
-.tituloFormularioC {
-    width: 100%;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.cajonFormularioC {
-    @extend .sliderPrincipal;
-}
-#opcionFormularioUnoC {
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.frmCamp {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    flex-direction: column;
+    @include margin(30px, 100px, 10%, 10%);
+    .tituloFormularioC {
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .cajonFormularioC {
+        display: flex;
+        flex-direction: column;;
+        .opcionFormularioUnoC {
+            @include margin(20px, 20px, auto, auto);
+            .frmCamp {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .frmCampLbl {
+                    width: 20%;
+                    & p {
+                        margin-top: 5%;
+                        margin-bottom: 5%;
+                    }
+                }
+                .frmCampTxt {
+                    width: 100%;
+                    & input {
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid rgba(128, 128, 128, 0.219);
+                    }
+                }
+                .frmTextarea {
+                    width: 100%;
+                    text-align: center;
+                    .frmTextareaCamp {
+                        width: 90%;
+                    
+                    }
+                }
+            }
+            .frmBtn {
+                display: flex;
+                flex-direction: row;
+                .frmBtnBtn {
+                    width: 40%;
+                    margin: auto;
+                    background-color: white;
+                    border: 2px solid #47D0AF;
+                    border-radius: 5px;
+                    & input {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        /* Dirección Mapa */
+        .opcionFormularioDosC {
+            display: flex;
+            flex-direction: row;
+            @include margin(60px, 0px, auto, auto);
+            .mapaDireccionC {
+                width: 50%;
+            }
+            .cajonDireccionC {
+                @extend .sliderPrincipal;
+                margin: 0 auto;
+                width: 50%;
+                .cajonImagenDireccionC {
+                    width: 25%;
+                    margin: auto;
+                    .imagenDireccionC {
+                        width: 100%;
+                    }
+                }
+                .textoDireccionC {
+                    width: 75%;
+                    @include margin(auto, auto, 10px, 10px);
+                    & h3 {
+                        margin: revert;
+                    }
+                }
+            }
+        }
+        /****************************************/
+    }
 }
-.frmCampLbl {
-    width: 20%;
-}
-.frmCampLbl p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.frmCampTxt {
-    width: 80%;
-}
-.frmCampTxt input {
-    width: 90%;
-    height: 100%;
-    border: 1px solid rgba(128, 128, 128, 0.219);
-}
-.frmTextarea {
-    width: 100%;
-    text-align: center;
-}
-.frmTextareaCamp {
-    width: 90%;
 
-}
-.frmBtn {
-    display: flex;
-    flex-direction: row;
-}
-.frmBtnBtn {
-    width: 40%;
-    margin: auto;
-    background-color: white;
-    border: 2px solid #47D0AF;
-    border-radius: 5px;
-}
-.frmBtnBtn input {
-    text-align: center;
-    width: 100%;
-}
-#opcionFormularioDosC {
-    @extend .seccionDos;
-    width: 50%;
-}
-
-/* Dirección Mapa */
-.mapaDireccionC {
-    height: 50%;
-}
-.cajonDireccionC {
-    @extend .sliderPrincipal;
-    margin: 0 auto;
-    height: 50%;
-}
-.cajonImagenDireccionC {
-    width: 25%;
-    margin: auto;
-}
-.textoDireccionC {
-    width: 75%;
-    @include margin(auto, auto, 10px, 10px);
-}
-.textoDireccionC h3 {
-    margin: revert;
-}
-.imagenDireccionC {
-    width: 100%;
-}
-
-/****************************************/
 /*######################################################################*/
 /*#################### IMPORTACIONES DE ESTILOS RESPONSIVE ####################*/
 @import "responsive";

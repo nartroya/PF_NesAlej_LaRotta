@@ -3,6 +3,7 @@
     h1 {font-size: 1.5em;}
     h2 {font-size: 1.17em;}
     h3 {font-size: .83em;}
+    h4 {font-size: .83em;}
     p {font-size: .83em;}
     #gridAreas {
         display: grid;
@@ -45,6 +46,7 @@
     h1 {font-size: 1.5em;}
     h2 {font-size: 1.17em;}
     h3 {font-size: .83em;}
+    h4 {font-size: .83em;}
     p {font-size: .83em;}
     #gridAreas {
         display: grid;
@@ -88,6 +90,7 @@
     h1 {font-size: 1.5em;}
     h2 {font-size: 1.17em;}
     h3 {font-size: 0.83em;}
+    h4 {font-size: 0.83em;}
     p {font-size: 0.83em;}
     #gridAreas {
         display: grid;
@@ -362,52 +365,64 @@
     }
 }
 @media (max-width: 480px) {
-    .tituloOpcionC {
-        @include display (flex, row);
-    }
     .sliderPrincipalDosC {
         display: flex;
         flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        .opcionContactoC {
+            width: 90%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            .tituloOpcionC {
+                @include display (flex, row);
+            }
+        }
+        
     }
-    .opcionContactoC {
-        width: 90%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .cajonFormularioC {
-        display: flex;
-        flex-direction: column;
-    }
-    .tituloFormularioC {
-        margin-left: 10px;
-    }
-    .cajonImagenDireccionC {
-        width: 90%;
-    }
-    .textoDireccionC {
-        width: 90%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #opcionFormularioUnoC, #opcionFormularioDosC {
+    .formularioC {
         margin: auto;
-        width: 90%;
-    }
-    #opcionFormularioDosC {
-        margin-top: 20px;
-    }
-    .frmCampTxt input {
-        width: 100%;
-    }
-    .cajonDireccionC {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    .textoDireccionC h3 {
-        margin: revert;
-    }
+        .tituloFormularioC {
+            @include margin(50px, 30px, auto, auto);
+            padding: 10px;
+            text-align: center;
+        }
+        .cajonFormularioC {
+            display: flex;
+            flex-direction: column;
+            .opcionFormularioUnoC, .opcionFormularioDosC {
+                margin: auto;
+                width: 90%;
+            }
+            .opcionFormularioDosC {
+                display: flex;
+                flex-direction: column;
+                @include margin(70px, 30px, auto, auto);
+                .cajonDireccionC {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                    .cajonImagenDireccionC {
+                        width: 50%;
+                    }
+                    .textoDireccionC {
+                        width: 90%;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                    .textoDireccionC h3 {
+                        margin: revert;
+                    }
+                }
+                .mapaDireccionC {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+        }
+        
+    }     
 }
 /****************************************/
