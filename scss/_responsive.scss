@@ -303,56 +303,55 @@
 /****************************************/
 /******************** Media Queries PRODUCTOS ********************/
 @media (min-width: 481px) and (max-width: 1023px) {
-    .textoSliderPrincipalP {
-        padding: 10px;
-    }
-    .textoSeccionUnoP p {
-        padding: 10px;
-    }
-    .textoSeccionDosP {
-        margin: 10px;
-    }
-    .cajonImagenOnpremiseP {
-        width: 50%;
-        margin: auto;
-    }
-    .textoSeccionTresP {
-        margin: 10px;
-    }
+    
 }
 @media (max-width: 480px) {
-    .cajonSeccionUnoP {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .opcionCajonSeccionUnoP {
-        width: 90%;
-        margin: 10px auto;
-    }
     .textoSliderPrincipalP {
         padding: 10px;
     }
-    .textoSeccionUnoP p {
-        padding: 10px;
+    .seccionUnoP {
+        .textoSeccionUnoP p {
+            padding: 10px;
+        }
+        .cajonSeccionUnoP {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .opcionCajonSeccionUnoP {
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
     }
-    .textoSeccionDosP {
-        margin: 10px;
+    .seccionDosP {
+        .textoSeccionDosP {
+            @include margin(50px, 0px, 10%, 10%);
+        }
+        .productosOnpremisesP {
+            display: flex;
+            flex-direction: column;
+            @include margin(0px, 0px, 0%, 0%);
+            .cajonOnpremisesP {
+                width: 95%;
+                @include margin(10px, 10px, auto, auto);
+
+                .cajonImagenOnpremiseP {
+                    width: 50%;
+                    margin: auto;
+                }
+            }
+        }
     }
-    .cajonOnpremisesP {
-        width: 95%;
-    }
-    .cajonImagenOnpremiseP {
-        width: 50%;
-        margin: auto;
-    }
-    .botonSeccionTresP {
-        text-align: center;
-    }
-    .textoSeccionTresP {
-        margin: 10px;
-    }
+     .seccionTresP {
+        @include margin(50px, 10px, 10%, 10%);
+        .textoSeccionTresP {
+            margin: 10px;
+        }
+        .botonSeccionTresP {
+            text-align: center;
+        }
+     }  
 }
 /****************************************/
 /******************** Media Queries CONTACTANOS ********************/

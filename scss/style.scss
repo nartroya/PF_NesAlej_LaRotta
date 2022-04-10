@@ -405,96 +405,111 @@ $marca:(
 /*#################### ESTILOS GENERALES "PRODUCTO" ####################*/
 /******************** Header  ********************/
 /* Header */
-.sliderPrincipalP {
+.sliderPrincipalP  {
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
+    .textoSliderPrincipalP {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 /****************************************/
 /******************** Secciones MAIN  ********************/
-/* Seccion Uno */
-#colorCajonUno {background-color: #2D9BF0;}
-#colorCajonDos {background-color: #47D0AF;}
-#colorCajonTres {background-color: #CEE741;}
-.seccionUnoP {
-    @extend .seccionDos;
-}
-.cajonSeccionUnoP {
-    @extend .sliderPrincipal;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.opcionCajonSeccionUnoP {
-    width: 32%;
-    margin: 0 auto;
-    
-}
-.imagenSeccionUnoP {
+/* MAIN*/
+main {
     width: 100%;
-    padding: 0;
-    margin: 0;
 }
-.cajonTituloSeccionUnoP, .cajonTextoSeccionUnoP {
-    margin: 10px;
-    color: white;
+
+/* Seccion Uno */
+.seccionUnoP {
+    .textoSeccionUnoP {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .cajonSeccionUnoP {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 15%;
+        margin-right: 15%;
+        #colorCajonUno {background-color: #2D9BF0;}
+        #colorCajonDos {background-color: #47D0AF;}
+        #colorCajonTres {background-color: #CEE741;}
+        .opcionCajonSeccionUnoP {
+            width: 32%;
+            margin: 0 auto;
+            .imagenSeccionUnoP {
+                width: 100%;
+                padding: 0;
+                margin: 0 auto;
+            }
+            .cajonTituloSeccionUnoP, .cajonTextoSeccionUnoP {
+                margin: 10px;
+                color: white;
+            }
+        }
+    }
+
 }
+
 /* Seccion Dos */
 #colorOnpremisesUno {background-color: #12CDD4;}
 #colorOnpremisesDos {background-color: #8FD14F;}
 .seccionDosP {
-    @extend .seccionDos;
-}
-.textoSeccionDosP {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.productosOnpremisesP {
-    @extend .seccionDos;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.cajonOnpremisesP {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    @include margin(30px, 30px, auto, auto);
-}
-.cajonImagenOnpremiseP {
-    width: 30%;
-    margin: auto;
-}
-.cajonDescripcionOnpremisesP {
-    width: 70%;
-    margin: auto;
-}
-.imagenOnpremiseP {
-    width: 100%;
-}
-.tituloOnpremiseP, .textoOnpremiseP {
-    margin: 20px;
+    .textoSeccionDosP {
+        @include margin(100px, 0px, 10%, 10%);
+    }
+    .productosOnpremisesP {
+        display: flex;
+        flex-direction: row;
+        @include margin(0px, 0px, 10%, 10%);
+        .cajonOnpremisesP {
+            display: flex;
+            flex-direction: row;
+            width: 49%;
+            margin: 0 auto;
+            .cajonImagenOnpremiseP {
+                width: 30%;
+                margin: auto;
+                .imagenOnpremiseP {
+                   width: 100%;
+                }
+            }
+            .cajonDescripcionOnpremisesP {
+                width: 70%;
+                margin: auto;
+                .tituloOnpremiseP, .textoOnpremiseP {
+                    @include margin(auto, auto, 5%, 5%);
+                    color: white;
+                }
+            }
+        }
+    }
 }
 /* Seccion Tres */
 .seccionTresP {
-    width: 100%;
-}
-
-.botonSeccionTresP {
-    text-align: right;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.botonSeccionTresP span {
-    height: 60px;
-    padding: 20px 100px;
-    background-color: #47D0AF;
-    border-radius: 8px;
-}
-.botonSeccionTresP span a {
-    text-decoration: none;
-    color: black;
-}
-.botonSeccionTresP span:hover {
-    background-color: #8FD14F;
+    display: flex;
+    flex-direction: column;
+    @include margin(100px, 10px, 10%, 10%);
+    .botonSeccionTresP {
+        text-align: right;
+        @include margin(40px, 40px, 0px, 0px);
+        & span {
+            height: 60px;
+            padding: 20px 100px;
+            background-color: #47D0AF;
+            border-radius: 8px;
+            &:hover {
+                background-color: #8FD14F;
+            }
+        }
+        & span a {
+            text-decoration: none;
+            color: black;
+        }
+    }
 }
 /****************************************/
 /*######################################################################*/
@@ -509,38 +524,40 @@ $marca:(
 }
 .sliderPrincipalDosC { 
     @extend .sliderPrincipal;
-}
-.opcionContactoC {
-    width: 32%;
-    margin: 0 auto;
-    border: solid 1px #47D0AF;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.imagenOpcionContactoC {
-    width: 100%;
-    text-align: right;
-}
-.tituloOpcionC {
-    @extend .sliderPrincipal;
-}
-.objetoTituloOpcionC {
-    margin: auto;
-}
-#opcionTituloUnoC, #opcionTituloDosC, #opcionTituloTresC {
-    width: 80%;
-}
-#opcionImagenUnoC, #opcionImagenDosC, #opcionImagenTresC {
-    width: 20%;
-}
-.textoOpcionC li {
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-}
-.objetoTituloOpcionC h2 {
-    color: #12CDD4;
-    margin-left: 10px;
+    .opcionContactoC {
+        width: 32%;
+        margin: 0 auto;
+        border: solid 1px #47D0AF;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .tituloOpcionC {
+            @extend .sliderPrincipal;
+            .objetoTituloOpcionC {
+                margin: auto;
+                .imagenOpcionContactoC {
+                    width: 100%;
+                    text-align: right;
+                }
+                & h2 {
+                    color: #12CDD4;
+                    margin-left: 10px;
+                }
+            }
+            #opcionTituloUnoC, #opcionTituloDosC, #opcionTituloTresC {
+                width: 80%;
+            }
+            #opcionImagenUnoC, #opcionImagenDosC, #opcionImagenTresC {
+                width: 20%;
+            }
+        }
+        .textoOpcionC {
+            & li {
+                margin: 10px;
+                padding: 10px;
+                text-align: left;
+            }
+        }
+    }
 }
 /****************************************/
 /******************** MAIN  ********************/
